@@ -27,7 +27,7 @@ public class App {
             Double o1comp = Math.abs(o1.getValue().getValue() - o1.getValue().getPrevious());
             Double o2comp = Math.abs(o2.getValue().getValue() - o2.getValue().getPrevious());
             return o2comp.compareTo(o1comp);
-        }).limit(5).forEach(entry -> System.out.println(entry.getKey()));
+        }).limit(5).forEach(entry -> System.out.println(entry.getKey() + " " +entry.getValue()));
     }
 }
 

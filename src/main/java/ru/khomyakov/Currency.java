@@ -26,4 +26,17 @@ public class Currency {
     public double getPrevious() {
         return Previous;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "ID = " + ID + '\n' + '\t' +
+                "NumCode = " + NumCode + '\n' + '\t' +
+                "CharCode = " + CharCode + '\n' + '\t' +
+                "Nominal = " + Nominal + '\n' + '\t' +
+                "Name = " + Name + '\n' + '\t' +
+                "Value = " + Value + '\n' + '\t' +
+                "Previous = " + Previous +
+                '}';
+    }
 }
